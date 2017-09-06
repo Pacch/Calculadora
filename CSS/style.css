@@ -1,0 +1,103 @@
+body{
+	background: #EEEFF3;
+	margin :0;
+	display: flex;
+	justify-content: center;
+}
+
+div.conteiner{
+	background: #2C3D4F;
+	height: 908px;
+	width: 700px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+}
+
+div.conteiner__pantalla.conteiner__pantalla{
+	height: 208px;
+	width: 700px;
+	margin: 0;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	padding-bottom: 46px;
+}
+
+div.pantalla{
+	display: flex;
+	justify-content: flex-end;
+	font-size: 100px;
+	background: #97D1DC;
+	box-shadow:10px 10px 0 1px #67969E inset;  
+	width: 571px;
+	height: 131px;
+}
+
+a.data__numero 	{
+	font-family: Verdana;
+	box-shadow: 0px 0px 0px 6px #3A5069 inset;
+	background: #486381;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	height: inherit;
+	width: inherit;
+	font-size: 40px;
+	color:white;
+}	
+
+a.data__operacion, .data__borrar{
+	font-family: Verdana;
+	box-shadow: 0px 0px 0px 6px #5C7FA2 inset;
+	background: #628BB7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	height: inherit;
+	width: inherit;
+	font-size: 40px;
+	color:white;
+}
+
+a.data__igual{
+	font-family: Verdana;
+	box-shadow: 0px 0px 0px 6px #D65007 inset;
+	background: #FF751E;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	height: inherit;
+	width: inherit;
+	font-size: 40px;
+	color:white;
+}
+
+div.conteiner__botones{
+
+	max-width: 571px;
+	height: 654px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+
+
+}
+div.tamano__botones{
+	
+	height: 111px;
+	width: 120px;
+}
+
+div.tamano__botones__borrar{
+	height: 68px;
+	width: 120px;
+	border: 1px #3F556A solid;
+}
+
+
