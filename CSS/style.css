@@ -52,30 +52,40 @@ body{
 .data__numero{
 	box-shadow: 0px 0px 0px 6px #3A5069 inset;
 	background: #486381;
+	transition-duration: .1s;
+
 }
-.data__numero:hover{
+.data__numero:active{
 	box-shadow: 0px 0px 0px 6px #3A5069 inset;
 	background: black;
+	font-size: 70px;
+
 }
 
  .data__operacion, .data__borrar{
  	box-shadow: 0px 0px 0px 6px #5C7FA2 inset;
 	background: #628BB7;
+	transition-duration: .1s;
  }
 
-  .data__operacion:hover, .data__borrar:hover{
+  .data__operacion:active, .data__borrar:active{
  	box-shadow: 0px 0px 0px 6px #5C7FA2 inset;
 	background: black;
+	font-size: 70px;
+	
  }
 
  .data__igual{
  	box-shadow: 0px 0px 0px 6px #D65007 inset;
 	background: #FF751E;
+	transition-duration: .1s;
  }
 
- .data__igual:hover{
+ .data__igual:active{
  	box-shadow: 0px 0px 0px 6px #D65007 inset;
 	background: black;
+	font-size: 70px;
+	
  }
 
 .conteiner__botones{
