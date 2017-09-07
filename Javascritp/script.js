@@ -16,7 +16,7 @@ function numero(ev) { //recoge el número pulsado en el argumento.
             if (data==".") { //si escribimos una coma al principio del número
                mostrar().innerHTML="0."; //escribimos 0.
                x=data; //guardar número
-               console.log/(x.length());
+         
                coma=1; //cambiar estado de la coma
                }
            }
@@ -24,7 +24,7 @@ function numero(ev) { //recoge el número pulsado en el argumento.
                if (data=="." && coma==0) { //si escribimos una coma decimal pòr primera vez
                    mostrar().innerHTML+=data;
                    x+=data;//sumamos los datos progresivamente.
-                   console.log/(x.length());
+                   
                    coma=1; //cambiar el estado de la coma 
                }
                //si intentamos escribir una segunda coma decimal no realiza ninguna acción.
@@ -35,7 +35,7 @@ function numero(ev) { //recoge el número pulsado en el argumento.
                else {
                    mostrar().innerHTML+=data;
                    x+=data
-                   console.log/(x.length());
+                   
                }
             }
             xi=0 //el número está iniciado y podemos ampliarlo.
