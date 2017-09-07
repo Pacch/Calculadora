@@ -1,14 +1,12 @@
-function mostrar(){
-	 return mostrarr = document.getElementById("pantalla");	
-
-}
-
 let x="0"; //número en pantalla
 let xi=1; //iniciar número en pantalla: 1=si; 0=no;
 let coma=0; //estado coma decimal 0=no, 1=si;
 let ni=0; //número oculto o en espera.
 let op="no"; //operación en curso; "no" =  sin operación.
 
+function mostrar(){  //obtener el dato;
+	 return mostrarr = document.getElementById("pantalla");	
+}
 
 function numero(ev) { //recoge el número pulsado en el argumento.
 		let data = this.dataset.numero;//obtener el dataset del html
@@ -18,6 +16,7 @@ function numero(ev) { //recoge el número pulsado en el argumento.
             if (data==".") { //si escribimos una coma al principio del número
                mostrar().innerHTML="0."; //escribimos 0.
                x=data; //guardar número
+               console.log/(x.length());
                coma=1; //cambiar estado de la coma
                }
            }
@@ -25,6 +24,7 @@ function numero(ev) { //recoge el número pulsado en el argumento.
                if (data=="." && coma==0) { //si escribimos una coma decimal pòr primera vez
                    mostrar().innerHTML+=data;
                    x+=data;//sumamos los datos progresivamente.
+                   console.log/(x.length());
                    coma=1; //cambiar el estado de la coma 
                }
                //si intentamos escribir una segunda coma decimal no realiza ninguna acción.
@@ -35,6 +35,7 @@ function numero(ev) { //recoge el número pulsado en el argumento.
                else {
                    mostrar().innerHTML+=data;
                    x+=data
+                   console.log/(x.length());
                }
             }
             xi=0 //el número está iniciado y podemos ampliarlo.
@@ -46,7 +47,6 @@ function numero(ev) { //recoge el número pulsado en el argumento.
 function operar(ev) {
 		let  s = this.dataset.operacion;
 		if (s === "+" || s === "-" || s === "*" || s ==="/")  {
-		 
          ni=x //ponemos el 1º número en "numero en espera" para poder escribir el segundo.
          console.log("peru");
          op=s; //guardamos tipo de operación.

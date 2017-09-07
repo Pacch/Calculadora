@@ -5,17 +5,16 @@ body{
 	justify-content: center;
 }
 
-div.conteiner{
+.conteiner{
 	background: #2C3D4F;
 	height: 908px;
 	width: 700px;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-
 }
 
-div.conteiner__pantalla.conteiner__pantalla{
+.conteiner__pantalla, .conteiner__pantalla{
 	height: 208px;
 	width: 700px;
 	margin: 0;
@@ -25,8 +24,9 @@ div.conteiner__pantalla.conteiner__pantalla{
 	padding-bottom: 46px;
 }
 
-div.pantalla{
+.pantalla{
 	display: flex;
+	align-items: center;
 	justify-content: flex-end;
 	font-size: 100px;
 	background: #97D1DC;
@@ -35,7 +35,7 @@ div.pantalla{
 	height: 131px;
 }
 
-a.data__numero 	{
+.data__numero , .data__operacion, .data__borrar, .data__igual{
 	font-family: Verdana;
 	box-shadow: 0px 0px 0px 6px #3A5069 inset;
 	background: #486381;
@@ -49,55 +49,50 @@ a.data__numero 	{
 	color:white;
 }	
 
-a.data__operacion, .data__borrar{
-	font-family: Verdana;
-	box-shadow: 0px 0px 0px 6px #5C7FA2 inset;
+.data__numero{
+	box-shadow: 0px 0px 0px 6px #3A5069 inset;
+	background: #486381;
+}
+.data__numero:hover{
+	box-shadow: 0px 0px 0px 6px #3A5069 inset;
+	background: black;
+}
+
+ .data__operacion, .data__borrar{
+ 	box-shadow: 0px 0px 0px 6px #5C7FA2 inset;
 	background: #628BB7;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-decoration: none;
-	height: inherit;
-	width: inherit;
-	font-size: 40px;
-	color:white;
-}
+ }
 
-a.data__igual{
-	font-family: Verdana;
-	box-shadow: 0px 0px 0px 6px #D65007 inset;
+  .data__operacion:hover, .data__borrar:hover{
+ 	box-shadow: 0px 0px 0px 6px #5C7FA2 inset;
+	background: black;
+ }
+
+ .data__igual{
+ 	box-shadow: 0px 0px 0px 6px #D65007 inset;
 	background: #FF751E;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-decoration: none;
-	height: inherit;
-	width: inherit;
-	font-size: 40px;
-	color:white;
-}
+ }
 
-div.conteiner__botones{
+ .data__igual:hover{
+ 	box-shadow: 0px 0px 0px 6px #D65007 inset;
+	background: black;
+ }
 
+.conteiner__botones{
 	max-width: 571px;
 	height: 654px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-
-
-
 }
-div.tamano__botones{
-	
+
+.tamano__botones{
 	height: 111px;
 	width: 120px;
 }
 
-div.tamano__botones__borrar{
+.tamano__botones__borrar{
 	height: 68px;
 	width: 120px;
-	border: 1px #3F556A solid;
 }
-
 
