@@ -14,25 +14,36 @@ body{
 	flex-wrap: wrap;
 }
 
-.conteiner__pantalla, .conteiner__pantalla{
+.conteiner__pantalla{
 	height: 208px;
 	width: 700px;
-	margin: 0;
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
+	direction: column;
+	flex-wrap: wrap;
 	justify-content: center;
 	padding-bottom: 46px;
+	flex-direction: column;
 }
 
-.pantalla{
+.pantalla, .sub__pantalla{
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	font-size: 100px;
 	background: #97D1DC;
-	box-shadow:10px 10px 0 1px #67969E inset;  
 	width: 571px;
-	height: 131px;
+}
+
+.pantalla{
+	font-size: 70px;
+	height: 100px;
+	box-shadow:10px -1px 0 1px #67969E inset;  
+}
+
+.sub__pantalla{
+	font-size: 30px;
+	box-shadow:10px 10px 0 1px #67969E inset;  
+	height: 31px;
 }
 
 .data__numero , .data__operacion, .data__borrar, .data__igual{
