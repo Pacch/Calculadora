@@ -1,2 +1,2 @@
 # Calculadora
-Proyecto personal , Esta hecho con HTML5 , CSS3 y Javascritp (EM6) Sass.
+Proyecto personal , Esta hecho con HTML5 , CSS3 ,Sass y Javascritp (EM6).
