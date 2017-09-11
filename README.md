@@ -12,3 +12,12 @@ hace operaciones basicas:
 - C
 - CE
 
+## Uso
+clickea en los botones y has las operaciones que necesites.
+
+## Créditos
+Juan Harol Esquivel Luera (https://twitter.com/HPacch).
+
+## Licencia
+[MIT](https://opensource.org/licenses/MIT)
+
