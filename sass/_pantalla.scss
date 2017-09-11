@@ -1,0 +1,34 @@
+
+.conteiner__pantalla , .pantalla , .sub__pantalla{
+    display: flex;
+	align-items: center;
+}
+
+.conteiner__pantalla{
+    height: 208px;
+	width: 700px;
+    direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 46px;
+    flex-direction: column;
+        .pantalla, .sub__pantalla{
+	        justify-content: flex-end;
+	        background: $colorPantalla;
+	        width: 571px;
+        }
+    
+}  
+
+.pantalla{
+	font-size: 70px;
+	height: 80px;
+	box-shadow:10px -1px 0 1px $colorBordePantalla inset;  
+}
+
+.sub__pantalla{
+	font-size: 25px;
+	box-shadow:10px 10px 0 1px $colorBordePantalla inset;  
+	height: 51px;
+}
+

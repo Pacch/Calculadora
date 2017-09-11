@@ -54,11 +54,11 @@ function operar(ev) {
          ni=x //ponemos el 1º número en "numero en espera" para poder escribir el segundo.
          op=s; //guardamos tipo de operación.
          xi=1; //inicializar pantalla.
-         sp=ni +" "+ op;
-         console.log(sp);
+         sp=ni +"  "+ op;
          mostrarSubPantalla().innerHTML=sp;	
 		}else{
 		 igualar()
+		  mostrarSubPantalla().innerHTML="";	
 			}
 
 		}	
@@ -69,7 +69,6 @@ function igualar() {
             }
          else { //con operación pendiente resolvemos
             sl=ni + op + x; // escribimos la operación en una cadena
-            
             sol=eval(sl) //convertimos la cadena a código y resolvemos
             pantalla.innerHTML=sol //mostramos la solución
             x=sol; //guardamos la solución
@@ -83,6 +82,7 @@ function borrar(ev){
 	if(backspace ==="CE"){
 		x="0";
 		n1= "0";
+		sp= 0;
 		mostrar().innerHTML="";
 	}else if (x != 0) {
 		array=[...x];
@@ -105,17 +105,17 @@ function borrar(ev){
 	}
 }
 
-const obtenerNummero = document.querySelectorAll(".data__numero");
+const obtenerNummero = document.querySelectorAll(".botonNumero");
 for (var i = 0; i < obtenerNummero.length; i++) {
 obtenerNummero[i].addEventListener('click',numero);
 }
 
-const obtenerOperacion = document.querySelectorAll(".data__operacion");
+const obtenerOperacion = document.querySelectorAll(".btnOperacion");
 for (var i = 0; i < obtenerOperacion.length; i++) {
 obtenerOperacion[i].addEventListener('click',operar);
 }
 
-const obtenerBorrado = document.querySelectorAll(".data__borrar");
+const obtenerBorrado = document.querySelectorAll(".botonBorrar");
 for (var i = 0; i < obtenerBorrado.length; i++) {
 obtenerBorrado[i].addEventListener('click',borrar);
 }

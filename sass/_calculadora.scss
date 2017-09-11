@@ -1,0 +1,11 @@
+//tamaño pantalla 1920 * 1080 
+.conteiner{
+	background: $colorCalculadora;
+	height: 908px;
+	width: 700px;
+	display: flex;
+	justify-content: space-around;
+    flex-wrap: wrap;
+ }
+
+ 

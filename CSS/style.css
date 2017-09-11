@@ -1,119 +1,98 @@
-body{
-	background: #EEEFF3;
-	margin :0;
-	display: flex;
-	justify-content: center;
-}
+header {
+  height: 20px;
+  display: flex;
+  justify-content: center; }
 
-.conteiner{
-	background: #2C3D4F;
-	height: 908px;
-	width: 700px;
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
+.conteiner {
+  background: #2C3D4F;
+  height: 908px;
+  width: 700px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
 
-.conteiner__pantalla{
-	height: 208px;
-	width: 700px;
-	display: flex;
-	align-items: center;
-	direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding-bottom: 46px;
-	flex-direction: column;
-}
+.conteiner__pantalla, .pantalla, .sub__pantalla {
+  display: flex;
+  align-items: center; }
 
-.pantalla, .sub__pantalla{
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-	background: #97D1DC;
-	width: 571px;
-}
+.conteiner__pantalla {
+  height: 208px;
+  width: 700px;
+  direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 46px;
+  flex-direction: column; }
+  .conteiner__pantalla .pantalla, .conteiner__pantalla .sub__pantalla {
+    justify-content: flex-end;
+    background: #97D1DC;
+    width: 571px; }
 
-.pantalla{
-	font-size: 70px;
-	height: 100px;
-	box-shadow:10px -1px 0 1px #67969E inset;  
-}
+.pantalla {
+  font-size: 70px;
+  height: 80px;
+  box-shadow: 10px -1px 0 1px #67969E inset; }
 
-.sub__pantalla{
-	font-size: 30px;
-	box-shadow:10px 10px 0 1px #67969E inset;  
-	height: 31px;
-}
+.sub__pantalla {
+  font-size: 25px;
+  box-shadow: 10px 10px 0 1px #67969E inset;
+  height: 51px; }
 
-.data__numero , .data__operacion, .data__borrar, .data__igual{
-	font-family: Verdana;
-	box-shadow: 0px 0px 0px 6px #3A5069 inset;
-	background: #486381;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-decoration: none;
-	height: inherit;
-	width: inherit;
-	font-size: 40px;
-	color:white;
-}	
+.conteiner__botones {
+  max-width: 571px;
+  height: 654px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .conteiner__botones .botonNumero, .conteiner__botones .btnOperacion, .conteiner__botones .botonBorrar, .conteiner__botones .btnIgual {
+    font-family: Verdana;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: inherit;
+    width: inherit;
+    font-size: 40px;
+    color: white; }
 
-.data__numero{
-	box-shadow: 0px 0px 0px 6px #3A5069 inset;
-	background: #486381;
-	transition-duration: .1s;
+.botonNumero {
+  box-shadow: 0px 0px 0px 6px #3A5069 inset;
+  background: #486381;
+  transition-duration: .1s; }
+  .botonNumero:active {
+    background: #3A5069;
+    font-size: 70px; }
 
-}
-.data__numero:active{
-	box-shadow: 0px 0px 0px 6px #3A5069 inset;
-	background: #2F4155;
-	font-size: 70px;
+.btnOperacion, .botonBorrar {
+  box-shadow: 0px 0px 0px 6px #5C7FA2 inset;
+  background: #628BB7;
+  transition-duration: .1s; }
+  .btnOperacion:active, .botonBorrar:active {
+    background: #3B577A;
+    font-size: 70px; }
 
-}
+.btnIgual {
+  box-shadow: 0px 0px 0px 6px #D65007 inset;
+  background: #FF751E;
+  transition-duration: .1s; }
+  .btnIgual:active {
+    background: #FE6205;
+    font-size: 70px; }
 
- .data__operacion, .data__borrar{
- 	box-shadow: 0px 0px 0px 6px #5C7FA2 inset;
-	background: #628BB7;
-	transition-duration: .1s;
- }
+.tamano__botones {
+  height: 111px;
+  width: 120px; }
 
-  .data__operacion:active, .data__borrar:active{
- 	box-shadow: 0px 0px 0px 6px #5C7FA2 inset;
-	background: #3B577A;
-	font-size: 70px;
-	
- }
+.tamano__botones__borrar {
+  height: 68px;
+  width: 120px; }
 
- .data__igual{
- 	box-shadow: 0px 0px 0px 6px #D65007 inset;
-	background: #FF751E;
-	transition-duration: .1s;
- }
+body {
+  background: #F5F5F5;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
 
- .data__igual:active{
- 	box-shadow: 0px 0px 0px 6px #D65007 inset;
-	background: #FE6205;
-	font-size: 70px;
-	
- }
-
-.conteiner__botones{
-	max-width: 571px;
-	height: 654px;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-
-.tamano__botones{
-	height: 111px;
-	width: 120px;
-}
-
-.tamano__botones__borrar{
-	height: 68px;
-	width: 120px;
-}
-
+/*# sourceMappingURL=style.css.map */
