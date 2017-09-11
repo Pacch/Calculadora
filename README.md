@@ -1,7 +1,8 @@
 # Calculadora
 Proyecto personal , Esta hecho con HTML5 , CSS3 ,Sass y Javascritp (EM6).
 
-#Descripción 
+# Descripción 
+
 hace operaciones basicas:
 *Sumar
 *Restar
