@@ -1,0 +1,17 @@
+@import "components/variables";
+@import "components/header";
+@import "components/calculadora";
+@import "components/pantalla";
+@import "components/botones";
+@import "components/footer";
+
+body{
+	background: $colorBlanco;
+	margin :0 auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center; 
+}
+
+
