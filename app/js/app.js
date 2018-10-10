@@ -1,40 +1,5 @@
-// var elementos = document.querySelectorAll('[data-valor]');
-// let pantalla= document.querySelector(".calculadora__header");
-
-// elementos.forEach(function(el, i){
-//     el.addEventListener('click', function(e){
-//       obterDataNumero = el.dataset.valor;
-//       console.log(obterDataNumero);
-//       pantalla.innerHTML += obterDataNumero;
-//     });
-// });
-
-
-
-
-
-// const boton = document.querySelectorAll(".btn");
-// console.log(boton);
-// let cache = [];
-// let valor;
-
-// for (item of boton){
-//   item.addEventListener("click", function(){
-//     if(this.dataset.operacion === "igual"){
-//       // cache.reverse()
-//       valor = cache.join("");
-//       cache = [];
-//       console.log(valor);
-//       console.log(cache);
-//     }else{
-//       cache.push(this.dataset.valor);
-//       console.log(cache)
-//     }
-//   });
-// }
-
-const axios = require('axios');
-
-axios.get("http://api.pusherapp.com/apps/3/events").then(response => {
-
+var axios = require('axios');
+axios.get("http://api.pusherapp.com/apps/3/events").then(function (response) {
 });
+
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC90cy90ZXN0LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLElBQU0sS0FBSyxHQUFHLE9BQU8sQ0FBQyxPQUFPLENBQUMsQ0FBQztBQUUvQixLQUFLLENBQUMsR0FBRyxDQUFDLHdDQUF3QyxDQUFDLENBQUMsSUFBSSxDQUFDLFVBQUEsUUFBUTtBQUVqRSxDQUFDLENBQUMsQ0FBQyIsImZpbGUiOiJhcHAuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBheGlvcyA9IHJlcXVpcmUoJ2F4aW9zJyk7XHJcblxyXG5heGlvcy5nZXQoXCJodHRwOi8vYXBpLnB1c2hlcmFwcC5jb20vYXBwcy8zL2V2ZW50c1wiKS50aGVuKHJlc3BvbnNlID0+IHtcclxuXHJcbn0pOyJdfQ==
