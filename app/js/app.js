@@ -13,22 +13,26 @@
 
 
 
-const boton = document.querySelectorAll(".btn");
-console.log(boton);
-let cache = [];
-let valor;
+// const boton = document.querySelectorAll(".btn");
+// console.log(boton);
+// let cache = [];
+// let valor;
 
-for (item of boton){
-  item.addEventListener("click", function(){
-    if(this.dataset.operacion === "igual"){
-      // cache.reverse()
-      valor = cache.join("");
-      cache = [];
-      console.log(valor);
-      console.log(cache);
-    }else{
-      cache.push(this.dataset.valor);
-      console.log(cache)
-    }
-  });
-}
+// for (item of boton){
+//   item.addEventListener("click", function(){
+//     if(this.dataset.operacion === "igual"){
+//       // cache.reverse()
+//       valor = cache.join("");
+//       cache = [];
+//       console.log(valor);
+//       console.log(cache);
+//     }else{
+//       cache.push(this.dataset.valor);
+//       console.log(cache)
+//     }
+//   });
+// }
+
+axios.get("http://api.pusherapp.com/apps/3/events").then(response => {
+
+});
